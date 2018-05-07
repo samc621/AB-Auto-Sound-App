@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "All Brooklyn Auto Sound",
+    "description": "A mobile app for All Brookyln Auto Sound.",
+    "slug": "AllBrooklynAutoSound",
+    "privacy": "public",
+    "sdkVersion": "27.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.samuelcorso.allbkautosound"
+    },
+    "android": {
+      "package": "com.samuelcorso.allbkautosound"
+    }
+  }
+}
