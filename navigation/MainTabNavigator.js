@@ -7,9 +7,13 @@ import Colors from '../constants/Colors';
 
 import AppointmentScreen from '../screens/Appointment';
 import ContactScreen from '../screens/Contact';
+import AboutScreen from '../screens/About';
 
 export default TabNavigator(
   {
+    About: {
+      screen: AboutScreen,
+    },
     Appointment: {
       screen: AppointmentScreen,
     },
@@ -23,12 +27,15 @@ export default TabNavigator(
         const { routeName } = navigation.state;
         let iconName;
         switch (routeName) {
+          case 'About':
+            iconName = 'ios-paper-outline';
+            break; 
           case 'Appointment':
             iconName = 'ios-timer-outline';
             break;
           case 'Contact':
             iconName = 'ios-mail-outline';
-            break;
+            break; 
         }
         return (
           <Ionicons
